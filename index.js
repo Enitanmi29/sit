@@ -1,4 +1,4 @@
-var guestList = ["Taiwo", "Kenny", "Micheal", "Boniface", "Marvelous", "Stephen", "Matron", "Iya Atunde", "Teelop", "Racheal", "Ogunfunwa"];
+var guestList = ["Mobolaji", "Methodist Girls", "Redeemers", "ISL", "Tonbra", "Western", "Aje", "Ideal", "Aguda", "Jibowu", "Decent", "Havimar", "Staff School", "Royal", "Reagan", "ABS", "Cedar", "Rosecroft"];
 // function (name){
 //     if(name === guestList){
 //        alert("You're welcome" + name);
