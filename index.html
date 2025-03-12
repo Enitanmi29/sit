@@ -25,10 +25,10 @@
                 <a class="nav-link" href="./sign.html">Register</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <!-- <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> -->
           </div>
         </div>
       </nav>
@@ -48,7 +48,7 @@
 
               <button onclick="Sit(document.getElementById('floatingInput').value);" class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="i31gyn">Check</button>
               <hr class="mt-4 mb-1">
-              <small class="text-body-secondary mx-auto px-5">terms and conditions apply.</small>
+              <small class="text-body-secondary mx-auto px-auto">terms and conditions apply.</small>
             </form>
           </div> 
 
@@ -57,7 +57,7 @@
                 var name = `
                   <div class="form-floating mb-3">
                       <input type="text" class="form-control" id="floatingInput" placeholder="Name">
-                      <label for="floatingInput">Name</label>
+                      
                   </div>
                `;
               document.querySelector(".form-container").innerHTML = name;
