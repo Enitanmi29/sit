@@ -48,7 +48,7 @@
 
               <button onclick="Sit(document.getElementById('floatingInput').value);" class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="i31gyn">Check</button>
               <hr class="mt-4 mb-1">
-              <small class="text-body-secondary mx-auto px-4">terms and conditions apply.</small>
+              <small class="text-body-secondary mx-auto px-5">terms and conditions apply.</small>
             </form>
           </div> 
 
@@ -62,7 +62,10 @@
                `;
               document.querySelector(".form-container").innerHTML = name;
             });
-              var guestList = JSON.parse(localStorage.getItem("guestList")) || ["Mobolaji", "Methodist Girls", "Redeemers", "ISL", "Tonbra", "Western", "Aje", "Ideal", "Aguda", "Jibowu", "Decent", "Havimar", "Staff School", "Royal", "Reagan", "ABS", "Cedar", "Rosecroft"];
+            var guestList = ["Mobolaji", "Methodist Girls", "Redeemers", "ISL", "Western", "Aje", "Ideal", "Aguda", "Jibowu", "Decent", "Havimar", "Staff School", "Royal", "Reagan", "ABS", "Cedar", "Rosecroft"];
+             localStorage.setItem("guestList", JSON.stringify(guestList));
+             guestList = JSON.parse(localStorage.getItem("guestList"));
+            // var guestList = JSON.parse(localStorage.getItem("guestList")) || ["Mobolaji", "Methodist Girls", "Redeemers", "ISL", "Tonbra", "Western", "Aje", "Ideal", "Aguda", "Jibowu", "Decent", "Havimar", "Staff School", "Royal", "Reagan", "ABS", "Cedar", "Rosecroft"];
                 function Sit(name){
                   var upperCaseName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase(); 
                     if(guestList.includes(upperCaseName)) {
@@ -71,6 +74,8 @@
                        alert("You're not on the list, please go ahead and register");
                     }  
                 }
+                console.log(guestList);
+                console.log(name);
           </script>
     </div>
 </div>
