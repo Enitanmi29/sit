@@ -59,7 +59,7 @@
             <!-- <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
               <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
             </a> -->
-            <span class="mb-1 mb-md-0 text-body-secondary">© 2025 United Foundation for Linguistics, Culture and Development.</span>
+            <p class="mb-1 mb-md-0 text-body-secondary"> © <span id="currentYear"></span> United Foundation for Linguistics, Culture and Development.</p>
           </div>
       
           <!-- <ul class="nav col-md-4 justify-content-end list-styled d-flex">
@@ -71,6 +71,8 @@
       </div>
 
           <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+
               document.addEventListener("DOMContentLoaded", function() {
                 var name = `
                   <div class="form-floating mb-3">
