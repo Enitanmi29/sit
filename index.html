@@ -85,9 +85,9 @@
                `;
               document.querySelector(".form-container").innerHTML = name;
             });
-            var guestList = ["Mobolaji", "Methodist Girls", "Redeemers", "International", "Western", "Aje", "Ideal", "Aguda", "Jibowu", "Decent", "Havimar", "Staffschool", "Royal", "Reagan", "Abs", "Cedar", "Rosecroft"];
-             localStorage.setItem("guestList", JSON.stringify(guestList));
-             guestList = JSON.parse(localStorage.getItem("guestList"));
+            var guestList = JSON.parse(localStorage.getItem("guestList")) || ["Mobolaji", "Methodist Girls", "Redeemers", "International", "Western", "Aje", "Ideal", "Aguda", "Jibowu", "Decent", "Havimar", "Staffschool", "Royal", "Reagan", "Abs", "Cedar", "Rosecroft"];
+            localStorage.setItem("guestList", JSON.stringify(guestList));
+            //  guestList = JSON.parse(localStorage.getItem("guestList"));
             // var guestList = JSON.parse(localStorage.getItem("guestList")) || ["Mobolaji", "Methodist Girls", "Redeemers", "ISL", "Tonbra", "Western", "Aje", "Ideal", "Aguda", "Jibowu", "Decent", "Havimar", "Staff School", "Royal", "Reagan", "ABS", "Cedar", "Rosecroft"];
                 function Sit(name){
                   var upperCaseName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase(); 
@@ -103,7 +103,7 @@
         </div>
       </div>
 
-      
+
 
 
 
